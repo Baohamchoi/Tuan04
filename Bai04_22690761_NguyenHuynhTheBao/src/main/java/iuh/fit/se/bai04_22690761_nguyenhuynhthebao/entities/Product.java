@@ -1,16 +1,15 @@
 package iuh.fit.se.bai04_22690761_nguyenhuynhthebao.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 @Table(name = "products")
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Data
+@Getter
+@Setter
 public class Product {
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")
